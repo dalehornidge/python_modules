@@ -28,30 +28,4 @@ class TestCustomer(unittest.TestCase):
         self.assertEqual(21, self.customer.age)
         self.assertEqual(2, self.customer.energy_level)
         self.assertEqual(1002.50, self.coffee_shop.till)
-        
-        # self.test_decrease_wallet()
-        # self.test_energy_level_increase()
-        # self.customer.buy_drink(drink, coffee_shop)
-        # self.coffee_shop.test_can_increase_till(self.coffee_shop.till)
-
-
-
-
-
-    # def buy_drink(self, drink):
-    #     if self.wallet >= drink.price:
-    #        self.wallet.remove(drink.price)
-    #        coffee_shop.increase(drink.price)
-    #        self.increase_energy_level(drink.caffeine_level)
-
-    # test for customer buying drink
-    #  call wallet decrease
-    #  call till increase
-    #  call energy increase
-
-
-
-
-    # def test_check_age(self):
-    #     self.customer.check_age(21)
-    #     self.assertEqual(True, self.customer.age)
+      
