@@ -16,9 +16,18 @@ class Venue:
     def create_songs(self, new_song_title, new_song_artist):
         self.all_songs[new_song_title] = new_song_artist
 
+
+
+
+
+
     # def create_new_booking(self, guest_name, guest_party_size, guest_wallet):
     #     new_guest = Guest(guest_name, guest_party_size, guest_wallet)
-    #     if new_guest.wallet >
+    #     if new_guest.wallet >= self.entry_fee:
+    #         self.all_guests.append(new_guest)
+     
+    
+   
         
 
 
