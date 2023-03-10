@@ -58,3 +58,8 @@ class TestVenue(unittest.TestCase):
             "Dr Dre": "Still Dre",
             "Snow Patrol": "Chasing Cars",
             "S Club 7": "S Club Party", "Teenage Dirtbag": "Wheatus"}, self.venue.all_songs)
+
+    # def test_create_guest_booking_name(self):
+    #     self.venue.create_guest_booking("Adam", 6, 250)
+    #     self.assertEqual("Adam", self.venue.new_guest)
+
