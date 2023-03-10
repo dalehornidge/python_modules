@@ -1,24 +1,11 @@
 class Venue:
 
-    playlist_1 = {
-            "Cher": "I believe",
-            "Prince": "Purple Rain",
-            "Snoop Dogg": "Aint nuthin",
-            "The Proclaimers": "500 miles",
-            "Pulp": "Common People"       
-        }
 
-    playlist_2 = {
-            "Fallout Boy": "Sugar",
-            "East 17": "Stay",
-            "Dr Dre": "Still Dre",
-            "Snow Patrol": "Chasing Cars",
-            "S Club 7": "S Club Party"       
-        }
-
-    def __init__(self, name, all_rooms):
+    def __init__(self, name, all_rooms, all_songs):
         self.name = name
         self.all_rooms = all_rooms
+        self.all_songs = all_songs
+
     
         
 
@@ -27,7 +14,7 @@ class Venue:
 
 
 
-# songs (dict)
+
 # guests (list)
 
 # Functions
