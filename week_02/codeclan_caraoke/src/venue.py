@@ -6,7 +6,12 @@ class Venue:
         self.all_rooms = all_rooms
         self.all_songs = all_songs
 
-    
+    def create_room(self, new_room):
+        self.all_rooms.append(new_room)
+        
+    def create_songs(self, new_song_title, new_song_artist):
+        self.all_songs[new_song_title] = new_song_artist
+
         
 
 
@@ -18,7 +23,6 @@ class Venue:
 # guests (list)
 
 # Functions
-# create room
 # add_songs_to_room
 # create_guests
 # guest_room_check_in
