@@ -13,9 +13,9 @@ class TestRoom(unittest.TestCase):
     def test_max_occupants(self):
         self.assertEqual(9, self.room.max_occupants)
 
+    # def test_room_playlist(self):
+    #     self.assertEqual()
 
 
-    # room name
-    # max occupants
     # room playlist
     # current guests
