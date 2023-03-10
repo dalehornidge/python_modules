@@ -6,7 +6,7 @@ from src.venue import Venue
 
 class TestVenue(unittest.TestCase):
     def setUp(self):
-        self.venue = Venue("CodeClan Caraoke",["Room 10", "Room 11", "Room 12"], {
+        self.venue = Venue("CodeClan Caraoke", 20, ["Room 10", "Room 11", "Room 12"], {
            "Cher": "I believe",
             "Prince": "Purple Rain",
             "Snoop Dogg": "Aint nuthin",
