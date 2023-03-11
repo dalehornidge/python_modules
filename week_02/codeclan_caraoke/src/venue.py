@@ -22,14 +22,14 @@ class Venue:
         if new_guest.wallet >= self.entry_fee:
             self.all_guests.append(new_guest)
 
-    def create_new_booking(self, guest_name, guest_party_size, guest_wallet): 
-        new_guest = Guest(guest_name, guest_party_size, guest_wallet)
+    def create_new_booking(self, guest_name, guest_party_size, guest_wallet, favourite_song): 
+        new_guest = Guest(guest_name, guest_party_size, guest_wallet, favourite_song)
         if new_guest.wallet >= self.entry_fee:
            new_guest.wallet - self.entry_fee
            self.till + self.entry_fee
            self.all_guests[guest_name] = {"Guest Party Size": guest_party_size, "Guest Wallet": guest_wallet}  
 
-
+    
 
 
 
