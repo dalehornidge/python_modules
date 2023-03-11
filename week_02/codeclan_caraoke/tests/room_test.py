@@ -47,5 +47,6 @@ class TestRoom(unittest.TestCase):
         self.assertIn("November Rain", self.room.room_playlist)
 
     def test_check_guests_favourite_song(self):
+        self.room.add_songs_to_room("November Rain", "Guns N Roses")
         self.room.check_guests_favourite_song("November Rain")
         self.assertIn("November Rain", self.room.room_playlist)

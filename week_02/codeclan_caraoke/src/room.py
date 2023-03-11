@@ -29,7 +29,7 @@ class Room:
            
     def check_guests_favourite_song(self, song):
         for song in self.room_playlist:
-            if guest.favourite_song == self.room_playlist:
+            if guest.favourite_song == venue.all_songs:
                 return "Hell yeah!"
         else:
             return "This place sucks"
