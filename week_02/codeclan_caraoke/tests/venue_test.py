@@ -1,7 +1,7 @@
 import unittest
 
 from src.venue import Venue
-# from src.guest import Guest
+from src.guest import Guest
 # from src.room import Room
 
 class TestVenue(unittest.TestCase):
@@ -17,7 +17,7 @@ class TestVenue(unittest.TestCase):
             "Dr Dre": "Still Dre",
             "Snow Patrol": "Chasing Cars",
             "S Club 7": "S Club Party"   
-        })
+        }, 3000)
         # self.guest = Guest("Adam", 6, 155)    
 #__________________________________________________________________
 
@@ -31,8 +31,6 @@ class TestVenue(unittest.TestCase):
         self.venue.create_room("Room 13")
         self.assertEqual(4, len(self.venue.all_rooms))
 
-
-
     def test_venue_all_songs(self):
         self.assertEqual({"Cher": "I believe",
             "Prince": "Purple Rain",
@@ -44,7 +42,6 @@ class TestVenue(unittest.TestCase):
             "Dr Dre": "Still Dre",
             "Snow Patrol": "Chasing Cars",
             "S Club 7": "S Club Party"}, self.venue.all_songs)
-
     
     def test_create_songs(self):
         self.venue.create_songs("Teenage Dirtbag", "Wheatus")
@@ -59,11 +56,8 @@ class TestVenue(unittest.TestCase):
             "Snow Patrol": "Chasing Cars",
             "S Club 7": "S Club Party", "Teenage Dirtbag": "Wheatus"}, self.venue.all_songs)
 
-
-
-
-
-    def test_create_new_booking_name(self):
+    def test_create_new_booking(self):
         self.venue.create_new_booking("Adam", 6, 250)
-        self.assertEqual("Adam", self.venue.all_guests)
-   
+        self.assertIn("Adam", self.venue.all_guests)
+
+
